@@ -13,7 +13,7 @@ const allowedOrigins = [
     process.env.LIVE_URL,    // https://virtual-therapist-frontend.vercel.app
 ];
 
-// ✅ Keep only ONE CORS configuration
+//  Keep only ONE CORS configuration
 app.use(cors({
     origin: function (origin, callback) {
         // Allow requests with no origin (like mobile apps or curl requests)
